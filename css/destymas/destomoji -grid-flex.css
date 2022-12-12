@@ -1,0 +1,169 @@
+placement using flex:
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main, side {
+    float: left;
+}
+
+main { width: 70%;}
+aside { width: 29%;}
+footer { clear: both;}
+
+header {
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    display: contents;
+    margin-bottom: 10px;
+
+}
+nav ul { margin: 0;}
+nav li {
+    float: left;
+    display: flex;
+    padding: 0 10px;
+    border-right: 2px solid white;
+    height: 50px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363333
+}
+
+nav li > a {
+    color: white;
+}
+nav li:hover {
+    background-color: red;
+}
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+grido panaudojimas, deliojant svetaines elementus
+
+body {
+    display: grid;
+        'h h h'
+        'a t t'
+        'f f f'
+    ;
+    grid-gap: 10px;
+    grid-auto-rows: 50px auto 100px;
+    grid-template-columns: auto auto 300px;
+}
+C
+body > header {
+    grid-area: h;
+
+}
+body > footer {
+    grid-area: f;
+}
+
+body > aside {
+    grid-area: a;
+}
+}
+body > main {
+    grid-area: t;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wraper {
+    background-color: white;
+    height: 100%;
+    width: 1200px;
+    display: grid;
+    grid-template-areas:
+        'h h h h'
+        't t a a'
+        'f f f f'
+;
+    grid-gap: 10px;
+    /*grid-template-rows: 50px auto 100px;*/
+    /*grid-template-columns: auto auto 300px;*/
+}
+body > .reklama {
+    float: left;
+    height: 100%;
+    width: 200px;
+}
+.wraper  > header {
+    grid-area: h;
+}
+.wraper  > footer {
+    grid-area: f;
+}
+.wraper  > aside {
+    grid-area: a;
+}
+.wraper  > main {
+    grid-area: t;
+}
+
+header {
+    display: grid;
+    grid-template-areas:
+            'l s s'
+            'l n n';
+}
+header .logo {
+    grid-area: l;
+}
+header .slogan {
+    grid-area: s;
+}
+header nav {
+    grid-area: n;
+}
+
+.foto {
+    background-colour: #8e9995;
+    border-radius: 30 px;
+    padding: 5px;
+    width: 400px;
+}
+.photo1 {
+    width: 700px
+}
+.photo2 {
+    width: 250px;
+}
+justify-cell:center;
+align-self: center;
+.infolentele {
+    padding-left: 1000px;
+    padding-top: 50px;
+}
+place-items: center;
+
+
+/*border tipui, pakeisti inline*/
+
+/*display: flex;*/
+/*align-items: center;*/
+/*justify-content: center;*/

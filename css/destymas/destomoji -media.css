@@ -1,0 +1,212 @@
+/*variables *************************************************
+:root {
+    --main-primary-color: #363333;
+    --main-primary-text-color: #383838;
+    --main-secondary-color: gray;
+    --main-secondary-text-color: white;
+}
+*/
+@media****************************************************
+
+/* Extra maži įrenginiai (telefonai, 600px ir žemiau) */
+@media only screen and (max-width: 600px) {
+    .wraper {
+        background-color: yellow;
+        width: 300px;
+        grid-template-areas:
+        'h'
+        't'
+        'f';
+    }
+    .wraper  > aside {
+        display: none;
+    }
+    body > header {
+        grid-template-areas:
+            'n';
+    }
+    header .slogan, header .logo {
+        display: none;
+    }
+}
+
+/* Maži įrenginiai (statmenos planšetės, ar gulsti telefonai 600px ir aukščiau) */
+@media only screen and (min-width: 600px) {
+    .wraper {
+        background-color: lightblue;
+        width: 600px;
+        grid-template-areas:
+        'h'
+        't'
+        'f';
+    }
+    .wraper  > aside {
+        display: none;
+    }
+    body > header {
+        grid-template-areas:
+            'l'
+            'n';
+    }
+    header .slogan {
+        display: none;
+    }
+    header .logo {
+        display: block;
+    }
+}
+
+/* Vidutiniai įrenginiai (gulsčios planšetės ar maži laptopai, 768px ir aukščiau) */
+@media only screen and (min-width: 768px) {
+    .wraper {
+        background-color: lightcoral;
+        width: 700px;
+        grid-template-areas:
+        'h'
+        't'
+        'a'
+        'f';
+    }
+    body > header {
+        grid-template-areas:
+            'l s'
+            'n n';
+    }
+    .wraper  > aside {
+        display: block;
+    }
+    header .slogan {
+        display: block;
+    }
+    header .logo {
+        display: block;
+    }
+}
+
+/* Dideli įrenginiai (laptopai, staliniai PC, 992px ir aukščiau) */
+@media only screen and (min-width: 992px) {
+    .wraper {
+        background-color: orange;
+        width: 900px;
+        grid-template-areas:
+        'h h h h'
+        't t a a'
+        'f f f f';
+    }
+}
+
+/* Extra dideli įrenginiai (dideli laptopai ir stalinai PC, 1200px ir aukščiau) */
+@media only screen and (min-width: 1200px) {
+    .wraper {
+        background-color: white;
+        width: 1200px;
+        grid-template-areas:
+        'h h h h'
+        't t a a'
+        'f f f f';
+    }
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Secur
+
+
+
+
+
+
+body {
+    font-family: "Roboto Light", SansSerif, "DejaVu Sans";
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.foto {
+    background-color: aquamarine;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+main > img {
+    width: 400px;
+}
+
+td > img {
+    width: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-primary-color);
+}
+
+/* Meniu stilius */
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    float: left;
+    display: flex;
+    padding: 0 10px;
+    border-right: 2px solid var(--main-secondary-text-color);
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-secondary-color);
+    color: var(--main-secondary-text-color);
+    transition: all 700ms;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-secondary-color);
+}
+
+nav li > a {
+    color: inherit;
+}
+
+nav li:hover {
+    background-color: var(--main-secondary-text-color);
+    color: var(--main-primary-text-color);
+    transform: scale(1.2);
+}
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+/* Meniu stilius pabaiga */
+
+footer {
+    background-color: var(--main-primary-color);
+    color: var(--main-secondary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body aside {
+    display: grid;
+    align-content: space-evenly;
+    grid-gap: 20px;
+}
+.reklama {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-primary-color);
+    background-color: var(--main-secondary-color);
+    color: var(--main-primary-color);
+    min-height: 150px;
+    cursor: pointer;
+}
+body main {
+    padding-left: 10px;
+}

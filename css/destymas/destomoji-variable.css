@@ -1,0 +1,24 @@
+/*variables visada prasideda:--*/
+:root {
+    --main-primary-color: green;
+    --main-primary-text-color: blue;
+    --main-secondary-color: red;
+    --main-secondary-text-color: red;
+    --wraper-with: 1400px;
+}
+/* panaudot reik pvz: background-colour: var( --main-primary-color);
+ */
+
+img.var {
+    --foto-plotis: 400px;
+}
+
+img {
+    --foto-plotis: 200px;
+}
+
+
+.raudonas_tekstas { background-color: red;}
+.didelis_tekstas { font-size: 15px}
+.remelis {border: 1px solid red;}
+.active {opacity: 0.75}

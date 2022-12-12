@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<form action="http://localhost/kursiustiduomeni.php" methods="GET">
+      <label for="fn">Vardas</label>
+    <input name="firstname" type="text" id="fn"/>
+<br>
+
+<label for="qtype">Klausimo tipas</label>
+<select name="q_type" id="qtype">
+    <option value="ats1">Del darbu</option>
+    <option value="ats2">Del finansu</option>
+    <option value="ats3">Del nauju uzsakymu</option>
+</select>
+<br>
+
+<label for="zinute"> Tavo zinute man</label>
+<br>
+<textarea name="message" rows="10" cols="30" id="zinute">
+    The cat was playing in the garden.
+</textarea>
+<hr>
+
+<button type="button" onclick="alert('Hello World!')">Labas!</button>
+<br>
+
+<input value="siusti" type="submit" />
+</form>

@@ -1,0 +1,127 @@
+
+body > .name {
+    max-width: 250px;
+    -webkit-text-fill-color: #ffffff;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+body > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+body > header {
+     display: flex;
+     justify-content: center;
+}
+    header li > a {
+    color: #010109;
+}
+
+.mygtukai li {
+    display: flex;
+    float: left;
+    padding: 0 5px;
+}
+
+.mygtukai a {
+    text-decoration: none;
+}
+
+.mygtukai li:last-child {
+    background-color: #363333;
+    border-radius: 50px 50px 50px 50px;
+    -webkit-text-fill-color: coral;
+}
+
+.photo1 {
+    padding: 5px;
+    background-color: #363333FF;
+}
+
+.infolentele td {
+    max-width: 350px;
+    color: #363333;
+    background-color: #84a263;
+    text-align: center;
+}
+
+.infolentele td.koment {
+    -webkit-text-fill-color: #010109;
+}
+
+.infolentele th{
+    -webkit-text-fill-color: #010109;
+}
+
+body > aside {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: #84a263;
+    padding: 10px;
+    text-align: justify;
+}
+
+.wikiR {
+    background-color: #363333;
+    -webkit-text-fill-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+body > footer {
+    background-color: #363333;
+    display: flex;
+    justify-content: center;
+}
+
+.endmygtukai li {
+    display: flex;
+    float: left;
+    padding: 5px 5px;
+}
+
+footer li > a {
+    color: white;
+}
+
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #8db28d;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 200px auto 400px;
+    grid-template-rows: 100px auto 450px 50px;
+    grid-template-areas:
+        'o o h'
+        'a a a'
+        'm m m'
+        'w w f';
+}
+
+.name {
+    grid-area: o;
+}
+body > header {
+    grid-area: h;
+}
+body > main {
+    grid-area:m;
+}
+body > footer {
+    grid-area: f;
+}
+body > aside {
+    grid-area: a;
+}
+.wikiR {
+    grid-area: w;
+}
+
+
+
