@@ -1,7 +1,15 @@
-const x = 5;
-const y = 6;
-const z = x + y;
-console.log(z);
+// const x = 5;
+// const y = 6;
+// const z = x + y;
+// console.log(z);
+//
+// var person = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     age: 50,
+//     ayeColor: "blue"
+// };
+
 //pirmoji uzduotis
 let a = 1;
 const b = " Kintamoji a reiksme";
