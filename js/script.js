@@ -1,7 +1,16 @@
+/*// ===JavaScript===
+1. Duotas kintamasis r=15. Sukurti algoritmus kurie skaiciuotu apskritimo ilgi ir plota
+2 duoti du sveikuju skaiciu intervalai [a;b] ir [c;d], kur a<=c. Sudarykite programa, kuri nustatytu,
+    ar egzistuoja siu intervalu sankirta ir, jeigu sankirta egzistuoja, tai raskite jos rezius [x;Y]
+3. susikurkite siuos atskirus kintamuosius apie studenta: -vardas -pavarde - kursas - kur mokosi - pazymiu masyvas
+4. isveskite visus duomenis sakinio pavidalus, pvz.: "Tomas Tomauskas KTU, 4 kurse, jo pazymiai [7,4,5]."
+5. Isveskite visu kintamuju apibudinimus su tipais (naudoti typeof), pvz.:
+"parametro 'vardas' tipas yra 'string'...
+*/
 
 
 
-    // 1.
+// 1.
 const r = 15;
 let ilgisC = Math.round(2 * Math.PI * r);   //2Pr
 let plotasS = Math.round(Math.PI * (r ** 2)) //P*r2
@@ -83,13 +92,4 @@ const diena = 19;
 let mew = metai%10 + menuo%7 + diena%10;
 console.log(mew);
 
-// ===JavaScript===
-1. Duotas kintamasis r=15. Sukurti algoritmus kurie skaiciuotu apskritimo ilgi ir plota
-2 duoti du sveikuju skaiciu intervalai [a;b] ir [c;d], kur a<=c. Sudarykite programa, kuri nustatytu,
-ar egzistuoja siu intervalu sankirta ir, jeigu sankirta egzistuoja, tai raskite jos rezius [x;Y]
-3. susikurkite siuos atskirus kintamuosius apie studenta: -vardas -pavarde - kursas - kur mokosi - pazymiu masyvas
-4. isveskite visus duomenis sakinio pavidalus, pvz.: "Tomas Tomauskas KTU, 4 kurse, jo pazymiai [7,4,5]."
-5. Isveskite visu kintamuju apibudinimus su tipais (naudoti typeof), pvz.:
-"parametro 'vardas' tipas yra 'string'...
 */
-
