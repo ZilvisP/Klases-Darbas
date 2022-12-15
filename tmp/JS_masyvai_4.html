@@ -15,9 +15,12 @@
 let A = ["A","B", "1", 1, 2, "Vardas", "", [], null ];
 var count = 0;
 for(let i=0; i<A.length; i++) {
-    A[i]==='object'
-    count++;
+    if(typeof A[i]==='object') {
+        count++;
+    }
+
 }
+document.getElementById('4uzdt').innerHTML='Objektų kiekis duotame masyve: '+count;
 console.log(count)
 
 </script>
@@ -25,3 +28,10 @@ console.log(count)
 
 </body>
 </html>
+<!--let objectCount=0;-->
+<!--let a=['A','B','1',1,2,'Vardas','',[],null];-->
+<!--for(let i=0; i<a.length;i++){-->
+<!--if(typeof a[i]==='object'){-->
+<!--objectCount=objectCount+1;-->
+<!--}-->
+<!--}-->

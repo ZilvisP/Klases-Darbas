@@ -8,26 +8,23 @@
 <h1> Mano penktoji uzduotis </h1>
 <script>
     let A = ["A", "B", "1", 1, 2, "Vardas", "", [], null];
-    let i = 0;
+
     let ats = '';
-while (A.length > i; (typeof A[i] === "string"); i++) {
-        ats += '_' + A[i] + '_';
+    for (let i = 0; A.length > i; i++) {
+        if (typeof A[i] === 'string')
+            ats += '_' + A[i] + '_';
         i++;
+        document.write("+" + A[i])
     }
-    document.querySelector('body > h1').innerHTML = ats;
-    //
-    // if typeof(A)===string
-    //     if i < lenght,   A.typeof[i] === "string" i ++
+
 </script>
 
 </body>
 </html>
-
-<!--let A = ["A", "B", "1", 1, 2, "Vardas", "", [], null];-->
-<!--let i = 2;-->
-<!--let ats = "";-->
-<!--while (A.length > i) {-->
-<!--ats +='Kas 3cias' +' '+ A[i] + '<br>';-->
-<!--i+=3;-->
+<!--{-->
+<!--let a = ['A', 'B', '1', 1, 2, 'Vardas', '', [], null];-->
+<!--for (let i = 0; i < a.length ; i++)-->
+<!--if (typeof a[i] === 'string') {-->
+<!--document.write("+" + a[i])-->
 <!--}-->
-<!--document.querySelector('body > p').innerHTML = ats;-->
+<!--}-->
