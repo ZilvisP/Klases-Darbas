@@ -17,6 +17,7 @@ function priskirtiKlase(klasesvardas, el){
 
 
 
+// Jquery mygtukas dingsta ir atsiranda textas
 // $(function () {
 //     let elementas = $('demo');
 //
